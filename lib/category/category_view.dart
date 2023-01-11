@@ -96,7 +96,13 @@ class CategoryViewState extends State<CategoryView> {
                               itemBuilder: (BuildContext context, int index) {
                                 return Padding(
                                   padding: mediumAll,
-                                  child: const Text("Category 1"),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Text("Category 1"),
+                                      Icon(Icons.check, color: primaryColor,)
+                                    ],
+                                  ),
                                 );
                                 },
 
